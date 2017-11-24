@@ -1,4 +1,5 @@
 from twx.botapi import TelegramBot
+import datetime
 
 bot = TelegramBot('489053214:AAHub_fZo0OdP-SWy1aRFiyfxHZM4HinqDQ')
 log_ = open("log.txt", "r")
@@ -15,7 +16,11 @@ for updates_ in updates:
 		break
 	i += 1
 while True:
+	jam_ = datetime.datetime.now()
+	hari_ = datetime.datetime.now()
+	hari = hari_.strftime("%A")
 	updates = bot.get_updates().wait()
+	info = str(jam_)+' '+str(hari)+' waktu sekarang\n'
 	pan = len(updates)
 	if pan > mulai:
 		#print(pan, '>', mulai)
@@ -28,7 +33,7 @@ while True:
 			if updates[mulai].message.text == '/start':
 				result = bot.send_message(user_id, 'terimakasih telah memulai').wait()
 			elif updates[mulai].message.text == '/info':
-				result = bot.send_message(user_id, 'ini adalah bot percobaan ^_^').wait()
+				result = bot.send_message(user_id, info).wait()
 			else:
 				result = bot.send_message(user_id, 'command kamu salah kakak :P').wait()
 			mulai += 1
