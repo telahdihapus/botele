@@ -16,8 +16,10 @@ for updates_ in updates:
 		break
 	i += 1
 while True:
+	tambah = datetime.timedelta(hours=7)
 	jam_ = datetime.datetime.now()
 	hari_ = datetime.datetime.now()
+	jam_ = (jam_+tambah).time()
 	hari = hari_.strftime("%A")
 	updates = bot.get_updates().wait()
 	info = str(jam_)+' '+str(hari)+' waktu sekarang\n'
