@@ -13,6 +13,8 @@ user_id = 234091912
 jam_libur = ''
 while True:
 	jam_ = datetime.datetime.now()
+	tambah = datetime.timedelta(hours=7)
+	jam_ = (jam_+tambah).time()
 	#print(jam_)
 	#print('mulai')
 	jams = str(jam_.time())[:2]+str(jam_.time())[3:5]
@@ -38,7 +40,8 @@ while True:
 		while i < len(j['jadwal']):
 			ii = 0
 			jam_ = datetime.datetime.now()
-
+			tambah = datetime.timedelta(hours=7)
+			jam_ = (jam_+tambah).time()
 			jams = str(jam_.time())[:2]+str(jam_.time())[3:5]
 			jam = int(str(jam_.time())[:2]+str(jam_.time())[3:5])
 			#print(ii, len(j['jadwal'][hari]['jam']))
@@ -46,6 +49,8 @@ while True:
 			hari = hari_.strftime("%A")
 			while ii < len(j['jadwal'][hari]['jam']):
 				jam_ = datetime.datetime.now()
+				tambah = datetime.timedelta(hours=7)
+				jam_ = (jam_+tambah).time()
 				jam = int(str(jam_.time())[:2]+str(jam_.time())[3:5])
 				jams = str(jam_.time())[:2]+str(jam_.time())[3:5]
 				#print(jam)
@@ -85,6 +90,8 @@ while True:
 	except KeyError:
 		#print('x')
 		jam_ = datetime.datetime.now()
+		tambah = datetime.timedelta(hours=7)
+		jam_ = (jam_+tambah).time()
 		jam = int(str(jam_.time())[:2]+str(jam_.time())[3:5])
 		jams = str(jam_.time())[:2]+str(jam_.time())[3:5]
 		if jams == '0800':
