@@ -12,8 +12,8 @@ mulai = 0
 for updates_ in updates:
 	#print(log, updates[i].update_id)
 	if str(updates[i].update_id) == str(log):
-		mulai = i+1
 		break
+	mulai = i+1
 	i += 1
 while True:
 	tambah = datetime.timedelta(hours=7)
