@@ -1,0 +1,89 @@
+{"chat_id":"234091912",
+"jadwal":{
+	"Monday":{
+		"nama":"senin",
+		"jam":[
+			{
+				"jam":"0800",
+				"makul":"praktikum web lanjut",
+				"ruang":"komdas"
+				},
+			{
+				"jam":"1000",
+				"makul":"pemrograman berorientasi objek",
+				"ruang":"T.3.1"
+				},
+			{
+				"jam":"1300",
+				"makul":"proyek pengembangan web",
+				"ruang":"Lab. Jarkom"
+				}
+			]
+		},
+	"Tuesday":{
+		"nama":"selasa",
+		"jam":[
+			{
+				"jam":"1300",
+				"makul":"teknologi cloud computing",
+				"ruang":"S.3.4"
+				},
+			{
+				"jam":"1500",
+				"makul":"teknologi mobile",
+				"ruang":"S.3.2"
+				},
+			{
+				"jam":"1830",
+				"makul":"keamanan jaringan",
+				"ruang":"S.2.3"
+				},
+			{
+				"jam":"2000",
+				"makul":"praktik keamanan jaringan",
+				"ruang":"Lab. Jarkom"
+				}
+			]
+		},
+	"Wednesday":{
+		"nama":"rabu",
+		"jam":[
+			{
+				"jam":"1000",
+				"makul":"etika profesi",
+				"ruang":"S.2.2"
+				},
+			{
+				"jam":"1300",
+				"makul":"praktikum pemrograman berorientasi objek",
+				"ruang":"Lab. Pemrograman"
+				},
+			{
+				"jam":"1500",
+				"makul":"web lanjut",
+				"ruang":"U.2.4"
+				},
+			{
+				"jam":"1700",
+				"makul":"praktik teknologi cloud computing",
+				"ruang":"Lab. Pemrograman"
+				}
+			]
+		},
+	"Thursday":{
+		"nama":"kamis",
+		"jam":[
+			{
+				"jam":"1000",
+				"makul":"uji kualitas perangkat lunak",
+				"ruang":"B.1.3"
+				},
+			{
+				"jam":"1830",
+				"makul":"praktik teknologi basis data",
+				"ruang":"U.2.4"
+				}
+			]
+		}
+	}
+}
